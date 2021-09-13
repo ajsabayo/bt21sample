@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Yellow Project</title>
+	<meta name="author" content="AJ Sabayo">
+	<link rel="stylesheet" type="text/css" href="connectstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div id="connect">
+
+
+<!-- HEADER -->
+	
+	<header>
+		<nav>
+			<div id="logo"> <a href="index.html"> <img src="images/typsmall4.png" onmouseover="this.src='images/typsmall.png'" onmouseout="this.src='images/typsmall4.png'" /></a> </div>
+			<ul>
+				<li> <a href="index.html"> Home </a> </li>
+				<li> <a href="aboutdep.html"> About Depression </a> </li>
+				<li> <a href="hych.html"> How You Can Help </a> </li>
+				
+				<!--connect-->
+				<li class="dropdown"> <a href="connect.html" class="dropbtn"> Connect </a>
+					<div class="dropdown-content">
+						<a href="#blog"> Blog </a>
+						<a href="#forum"> Forum </a>
+						<a href="#news"> News </a>
+						<a href="#stories"> Stories </a>
+					</div>
+				</li>
+			
+			</ul>
+
+
+			<!-- sign in button -->
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button signin">Sign in</button>
+
+				<div id="id01" class="modal">
+  
+ 				<form class="modal-content animate" action="/action_page.php">
+    			<div class="imgcontainer">
+      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      			</div>
+
+    			<div class="container">
+      			<label><b>Username</b></label>
+      			<input type="text" placeholder="Enter Username" name="uname" required>
+
+      			<label><b>Password</b></label>
+      			<input type="password" placeholder="Enter Password" name="psw" required>
+        
+     			<button type="submit" class="submit">Login</button>
+     			<input type="checkbox" checked="checked"> Remember me
+    			</div>
+
+
+    			<div class="container" style="background-color:#f1f1f1">
+     			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      			<span class="psw">Forgot <a href="#">password?</a></span>
+   				</div>
+ 				</form>
+
+
+				</div>
+
+					<script>
+
+						var modal = document.getElementById('id01');
+
+
+						window.onclick = function(event) {
+    					if (event.target == modal) {
+      						  modal.style.display = "none";
+							}
+						}
+						</script>
+
+
+			
+		<!-- search bar -->
+			<form>
+  				<input type="text" name="search" placeholder="Search...">
+			</form>
+		</nav>
+	</header>
+
+	<!-- blog -->
+	<section id="blog">
+		
+		<article class="col-1">
+		<h1> Blog </h1>
+			<p>
+			Check out The Yellow Project Blog
+			<br>
+			to view articles about depression.
+			</p>
+		</article>
+		<button class="button viewblog" onclick="clickAlert()" value="Click-2-Alert"><a href="#">View Blog</a></button>
+		<script type="text/javascript">
+			function clickAlert() {
+				alert("Coming Soon!");
+			}
+		</script>
+
+	</section>
+
+
+
+	<section id="forum">
+	
+		<article class="col-2">
+		<h1> Forum </h1>
+			<p>
+			Reach out to our friends
+			<br>
+			with Depression by Starting 
+			<br>
+			a Discussion Forum.
+			</p>
+		</article>
+		<button class="button startadisc" onclick="clickAlert()" value="Click-2-Alert"><a href="#">Start a<br>Discussion</a></button>
+		<script type="text/javascript">
+			function clickAlert() {
+				alert("Coming Soon!");
+			}
+		</script>
+
+	</section>
+
+
+
+	<section id="news">
+	
+		<article class="col-3">
+		<h1> News </h1>
+			<p>
+			Check out the latest official news
+			<br>
+			about Depression.
+			</p>
+		</article>
+		<button class="button viewnews" onclick="clickAlert()" value="Click-2-Alert"><a href="#">View News</a></button>
+		<script type="text/javascript">
+			function clickAlert() {
+				alert("Coming Soon!");
+			}
+		</script>
+
+	</section>
+
+
+
+	<section id="stories">
+		
+		<article class="col-4">
+		<h1> Stories </h1>
+			<p>
+			See through the eyes of an
+			<br>
+			individual with Depression.
+			</p>		
+		</article>
+		<button class="button viewstories" onclick="clickAlert()" value="Click-2-Alert"><a href="#">View Stories</a></button>
+		<script type="text/javascript">
+			function clickAlert() {
+				alert("Coming Soon!");
+			}
+		</script>
+		<!-- Back to top button -->
+		<button class="button backtotop"><a href="#logo">Back to top</a></button>
+
+	</section>
+
+
+</div>
+
+<!-- FOOTER -->
+	<footer>
+		<div id="footlogo">
+			<img src="images/mainlogo1.png">
+		</div>
+
+
+				<div class="footlinks">
+					<ul>
+						<li> <a href="index.html"> Home </a> </li>
+						<li> <a href="aboutdep.html"> About Depression </a> </li>
+						<li> <a href="hych.html"> How You Can Help </a> </li>
+						<li> <a href="connect.html#blog"> Blog </a> </li>
+					</ul>
+				</div>
+
+
+				<div class="footlinks">
+					<ul>
+						<li> <a href="connect.html#forum"> Forum </a> </li>
+						<li> <a href="connect.html#news"> News </a> </li>
+						<li> <a href="connect.html#stories"> Stories </a> </li>
+						<li> <a href="index.html"> Search </a> </li>
+					</ul>
+				</div>
+
+
+				<div class="footlinks">
+					<div class="nl">
+						<h4> Subscribe to our newsletter </h4>
+						<form> <input type="text" name=letter placeholder="email"> </form>
+					</div>
+				</div>
+
+<br>
+				<div class="footlinks">
+					<div class="icons">
+						<a href="#"> <img src="images/fbwhite.png" onmouseover="this.src='images/fbyellow.png'" onmouseout="this.src='images/fbwhite.png'" /></a>
+					</div>
+					<div class="icons">
+						<a href="#"> <img src="images/twtwhite.png" onmouseover="this.src='images/twtyellow.png'" onmouseout="this.src='images/twtwhite.png'" /></a>
+					</div>
+					<div class="icons">
+						<a href="#"> <img src="images/youtubewhite.png" onmouseover="this.src='images/youtubeyellow.png'" onmouseout="this.src='images/youtubewhite.png'" /></a>
+					</div>
+				<br>
+				<br>
+				<br>
+				
+				
+					<p>
+					&copy; 2017 | MINTER1 by AJS | For Educational Purposes Only
+					</p>
+				
+
+				</div>
+
+
+	</footer>
+
+
+</body>
+</html>

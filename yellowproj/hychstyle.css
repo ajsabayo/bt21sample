@@ -1,0 +1,571 @@
+/* The Yellow Project Study 1 */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Lato', sans-serif;
+}
+
+#how {
+	width: auto;
+	margin: 0 auto;
+	background: #FFFFFF;
+	color: #000;
+	position: inherit;
+}
+
+header {
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header img {
+	height: 100%;
+	width: 100%;
+}
+
+#logo {
+	width: 50px;
+	float: left;
+	margin: 6px;
+	position: inherit;
+}
+
+#logo img {
+	width: 100px;
+}
+
+
+nav {
+	width: 100%;
+	height: 8%;
+	position: absolute;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+
+nav ul {
+	list-style-type: none;
+	margin-left: 115px;
+	padding: 0;
+}
+
+
+nav li {
+	float: left;
+}
+
+
+nav li a, .dropbtn {
+	color: #FFE700;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding: 21px 20px;
+}
+
+
+nav li a:hover, .dropdown:hover .dropbtn {
+	background-color: #FFF157;
+	color: #333;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+nav li .dropdown {
+	display: inline-block;
+}
+
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+    min-width: 131px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: #333;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+
+.dropdown-content a:hover {
+	background-color: black;
+	color: #FFF157;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.active {
+	background-color: #FFF157;
+	color: #333;
+}
+
+
+.active:hover {
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+
+
+
+/** START of "Sign in" button **/
+.button {
+    background-color: #FFF157;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-right: 30px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+    float: right;
+}
+
+.signin a {
+	text-decoration: none;
+	color: #FFF157;
+}
+
+.signin {
+    background-color: black; 
+    color: #FFF157; 
+    border: 2px solid #FFF157;
+}
+
+.signin:hover {
+    background-color: #FFF157;
+    border-radius: 10px;
+    color: black;
+}
+
+.signin:hover a {
+	color: black;
+}
+/** END of "Sign in" button **/
+
+
+
+/** START of "Search" button **/
+input[name=search] {
+    width: 80px;
+    box-sizing: border box;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+    padding: 7px 7px 7px 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[name=search]:focus {
+    width: 16%;
+    border: 2px solid #FFF157;
+    margin-top: 14px;
+    outline: none;
+}
+/** END of "Search" button **/
+
+
+
+
+/** What **/
+
+#what {
+	background: url(images/whatisdep.png);
+	background-position: center;
+	color: #333;
+	min-height: 950px;
+	width: 100%;
+}
+
+
+
+
+.col-1 {
+	width: 60%;
+	padding: 20px 10%;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0px 20%;
+}
+
+
+.col-1 h1 {
+	font-size: 60px;
+	letter-spacing: 1px;
+	margin-top: 20%;
+	padding: 80px 5%;
+	text-shadow: 4px 4px white;
+}
+
+.col-1 p{
+	line-height: 30px;
+}
+
+
+#ways {
+	background: url(images/kinds.png);
+	background-position: center;
+	min-height: 850px;
+}
+
+
+.col-2 {
+	width: 800px;
+	padding: 50px;
+	box-sizing: border-box;
+	line-height: 30px;
+	float: left;
+	text-align: left;
+	margin: 15% 10%;
+	color: black;
+}
+
+.col-2 li {
+	list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#wayss {
+	background: url(images/kinds2.png);
+	background-position: center;
+	min-height: 850px;
+}
+
+
+.col-3 {
+	width: 800px;
+	padding: 50px;
+	box-sizing: border-box;
+	line-height: 30px;
+	float: right;
+	text-align: right;
+	color: black;
+	margin: 10% 8%;
+}
+
+.col-3 li {
+	list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** FOOTER */
+
+footer {
+	text-align: center;
+	padding: 10px 0px;
+	clear: both;
+	background: black;
+	min-height: 250px;
+	border-top: 5px solid #ccc;
+}
+
+footer p {
+	color: #BABABA;
+	font-size: 11px;
+	text-align: center;
+	float: left;
+	margin-left: 140px;
+	margin-top: 30px;
+	border-top: 1px solid white;
+	padding: 5px;
+}
+
+#footlogo {
+	width: 200px;
+	box-sizing: border-box;
+	margin: 50px;
+	float: left;
+}
+
+
+#footlogo img {
+	width: 100%;
+}
+
+.footlinks {
+	margin-left: 420px;
+	margin-top: 50px;
+}
+
+.footlinks ul {
+	float: left;
+	width: 250px;
+	list-style-type: none;
+}
+
+.footlinks li {
+	text-align: left;
+	line-height: 25px;
+}
+
+.footlinks a {
+	text-decoration: none;
+	color: white;
+}
+
+.footlinks a:hover {
+	color: #FFF157;
+}
+
+.icons {
+	float: left;
+	padding: 10px;
+	border-top: 1px solid #FFF157;
+}
+
+.icons img {
+	width: 100%;
+}
+
+
+.nl {
+	width: 200px;
+	float: left;
+}
+
+.nl h4 {
+	color: white;
+	font-size: 14px;
+	text-align: left;
+
+}
+
+input[name=letter] {
+    width: 175px;
+    box-sizing: border box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    padding: 10px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+
+
+
+
+
+/** POP-UP SIGN IN **/
+
+
+input[name=psw], input[type=password], input[name="uname"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.submit {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.submit:hover {
+    opacity: 0.8;
+}
+
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 30%; 
+}
+
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cancelbtn:hover,
+.cancelbtn:focus {
+    color: white;
+
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/** BACK TO TOP BUTTON **/
+
+.backtotop {
+	display: block;
+	background-color: transparent;
+	border: 4px solid #777;
+	font-weight: bold;
+	font-size: 14px;
+	float: left;
+	margin-top: 64%;
+	margin-left: 46%;
+	padding: 10px 10px;
+	position: absolute;
+}
+
+.backtotop:hover {
+	background-color: #777;
+	border-radius: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.backtotop a {
+	text-decoration: none;
+	color: #777;
+}
+
+.backtotop:hover a {
+	color: white;
+}
+
+
+
+
+
+
+
+

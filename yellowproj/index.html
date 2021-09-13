@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> The Yellow Project </title>
+	<meta name="author" content="AJ Sabayo">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="Home">
+
+<!-- HEADER -->
+	
+	<header>
+		<nav>
+			<div id="logo"> <a href="index.html"> <img src="images/typsmall4.png" onmouseover="this.src='images/typsmall.png'" onmouseout="this.src='images/typsmall4.png'" /></a> </div>
+			<ul>
+				<li> <a class="active" href="index.html"> Home </a> </li>
+				<li> <a href="aboutdep.html"> About Depression </a> </li>
+				<li> <a href="hych.html"> How You Can Help </a> </li>
+				
+				<!--connect-->
+				<li class="dropdown"> <a href="connect.html" class="dropbtn"> Connect </a>
+					<div class="dropdown-content">
+						<a href="connect.html#blog"> Blog </a>
+						<a href="connect.html#forum"> Forum </a>
+						<a href="connect.html#news"> News </a>
+						<a href="connect.html#stories"> Stories </a>
+					</div>
+				</li>
+				
+				
+			</ul>
+
+
+				<!--sign in button-->
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button signin">Sign in</button>
+
+				<div id="id01" class="modal">
+  
+ 				<form class="modal-content animate" action="/action_page.php">
+    			<div class="imgcontainer">
+      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      			</div>
+
+    			<div class="container">
+      			<label><b>Username</b></label>
+      			<input type="text" placeholder="Enter Username" name="uname" required>
+
+      			<label><b>Password</b></label>
+      			<input type="password" placeholder="Enter Password" name="psw" required>
+        
+     			<button type="submit" class="submit">Login</button>
+     			<input type="checkbox" checked="checked"> Remember me
+    			</div>
+
+
+    			<div class="container" style="background-color:#f1f1f1">
+     			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      			<span class="psw">Forgot <a href="#">password?</a></span>
+   				</div>
+ 				</form>
+
+
+				</div>
+
+					<script>
+
+						var modal = document.getElementById('id01');
+
+
+						window.onclick = function(event) {
+    					if (event.target == modal) {
+      						  modal.style.display = "none";
+							}
+						}
+						</script>
+	
+
+
+
+		<!-- search bar -->
+			<form>
+  				<input type="text" name="search" placeholder="Search...">
+			</form>
+		</nav>
+
+		<!-- Join us button -->
+		<button class="button joinus"><a href="#five">Join Us</a></button>
+	
+						<!-- down arrow -->
+						<div class="down">
+							<a href="#two"><img src="images/downwhite.png" onmouseover="this.src='images/downblack.png'" onmouseout="this.src='images/downwhite.png'" /> </a>
+						</div>
+
+
+	</header>
+
+
+
+<!-- SECTION TWO -->
+	<section id="two">
+
+						<!-- up arrow -->
+						<div class="uptwo">
+							<a href="#logo"><img src="images/upyellow.png" onmouseover="this.src='images/upblack.png'" onmouseout="this.src='images/upyellow.png'" /> </a>
+						</div>
+
+		<!-- Join us button -->
+		<button class="button learnmore"><a href="aboutdep.html">Learn More<br/>About Depression</a></button>
+
+
+						<!-- down arrow -->
+						<div class="downtwo">
+							<a href="#three"><img src="images/downyellow.png" onmouseover="this.src='images/downblack.png'" onmouseout="this.src='images/downyellow.png'" /> </a>
+						</div>
+	</section>
+
+
+<!-- SECTION THREE -->
+	<section id="three">
+
+						<!-- up arrow -->
+						<div class="upthree">
+							<a href="#two"><img src="images/upyellow.png" onmouseover="this.src='images/upblack.png'" onmouseout="this.src='images/upyellow.png'" /></a>
+						</div>
+
+		<!-- Go to Stories button -->
+		<button class="button goto"><a href="connect.html#stories">Go to Stories</a></button>
+
+						
+						<!-- down arrow -->
+						<div class="downthree">
+							<a href="#four"><img src="images/downyellow.png" onmouseover="this.src='images/downblack.png'" onmouseout="this.src='images/downyellow.png'" /> </a>
+						</div>
+	</section>
+
+
+<!-- SECTION FOUR -->
+	<section id="four">
+
+						<!-- up arrow -->
+						<div class="upfour">
+							<a href="#three"><img src="images/upyellow.png" onmouseover="this.src='images/upblack.png'" onmouseout="this.src='images/upyellow.png'" /></a>
+						</div>
+
+		<!-- Start a discussion button -->
+		<button class="button startadisc"><a href="connect.html#forum">Start a<br/>Discussion Forum</a></button>
+
+						
+						<!-- down arrow -->
+						<div class="downfour">
+							<a href="#five"><img src="images/downyellow.png" onmouseover="this.src='images/downblack.png'" onmouseout="this.src='images/downyellow.png'" /> </a>
+						</div>
+
+		<!-- Back to top button -->
+		<button class="button backtotop"><a href="#logo">Back to top</a></button>
+	</section>
+
+
+<!-- SECTION FIVE -->
+	<section id="five">
+
+		<div id="memberform">
+		<h2> Become a member </h2>
+		<br>
+
+			<div class="memform">
+				<form>
+				<input type="text" name="email" placeholder="email">
+				</form>
+
+				<br>
+
+				<form>
+				<input type="text" name="password" placeholder="password">
+				</form>
+
+				<p>Already a member? <a href="" onclick="clickAlert()" value="Click-2-Alert"> log-in. </a> </p>
+				<!-- Sign Up button -->
+				<button class="button signup" onclick="clickAlert()" value="Click-2-Alert"><a href="#">Sign Up</a></button>
+		<script type="text/javascript">
+			function clickAlert() {
+				alert("Coming Soon!");
+			}
+		</script>
+
+			</div>
+
+		</div>
+		</section>
+
+	</div>
+<!--end of #Home-->
+
+
+<!-- FOOTER -->
+	<footer>
+		<div id="footlogo">
+			<img src="images/mainlogo1.png">
+		</div>
+
+
+				<div class="footlinks">
+					<ul>
+						<li> <a href="index.html"> Home </a> </li>
+						<li> <a href="aboutdep.html"> About Depression </a> </li>
+						<li> <a href="hych.html"> How You Can Help </a> </li>
+						<li> <a href="connect.html#blog"> Blog </a> </li>
+					</ul>
+				</div>
+
+
+				<div class="footlinks">
+					<ul>
+						<li> <a href="connect.html#forum"> Forum </a> </li>
+						<li> <a href="connect.html#news"> News </a> </li>
+						<li> <a href="connect.html#stories"> Stories </a> </li>
+						<li> <a href="index.html"> Search </a> </li>
+					</ul>
+				</div>
+
+
+				<div class="footlinks">
+					<div class="nl">
+						<h4> Subscribe to our newsletter </h4>
+						<form> <input type="text" name=letter placeholder="email"> </form>
+					</div>
+				</div>
+
+<br>
+				<div class="footlinks">
+					<div class="icons">
+						<a href="https://www.facebook.com/angelajoyce.sabayo"> <img src="images/fbwhite.png" onmouseover="this.src='images/fbyellow.png'" onmouseout="this.src='images/fbwhite.png'" /></a>
+					</div>
+					<div class="icons">
+						<a href="https://twitter.com/ajsbyo"> <img src="images/twtwhite.png" onmouseover="this.src='images/twtyellow.png'" onmouseout="this.src='images/twtwhite.png'" /></a>
+					</div>
+					<div class="icons">
+						<a href="https://wwww.youtube.com/"> <img src="images/youtubewhite.png" onmouseover="this.src='images/youtubeyellow.png'" onmouseout="this.src='images/youtubewhite.png'" /></a>
+					</div>
+				<br>
+				<br>
+				<br>
+				
+				
+					<p>
+					&copy; 2017 | MINTER1 by AJS | For Educational Purposes Only
+					</p>
+				
+
+				</div>
+
+
+	</footer>
+
+</body>
+</html>
+
